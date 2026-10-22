@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VoiceBridge AI | Voice & Text Converter</title>
+
+    <meta name="description"
+          content="Convert speech into text and text into speech using VoiceBridge AI.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#" class="logo">
+            <span class="logo-icon">V</span>
+            <span>VoiceBridge<span class="logo-ai"> AI</span></span>
+        </a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#voice-to-text">Voice to Text</a>
+            <a href="#text-to-voice">Text to Voice</a>
+        </nav>
+
+        <a href="#converter" class="nav-button">Get Started ↗</a>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    YOUR PERSONAL VOICE ASSISTANT
+                </div>
+
+                <h1>
+                    Your voice.<br>
+                    Your words.<br>
+                    <span class="gradient-text">Your world.</span>
+                </h1>
+
+                <p>
+                    Transform speech into text and bring your words to life
+                    with natural text-to-speech. Simple, fast, and accessible.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#voice-to-text" class="primary-button">
+                        🎙 Start Speaking
+                    </a>
+
+                    <a href="#text-to-voice" class="secondary-button">
+                        🔊 Hear Your Text
+                    </a>
+                </div>
+
+                <div class="hero-features">
+                    <span>✓ Easy to use</span>
+                    <span>✓ Multiple languages</span>
+                    <span>✓ No sign-up required</span>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="visual-glow"></div>
+
+                <div class="voice-card">
+                    <div class="voice-card-header">
+                        <div>
+                            <span class="small-label">VOICEBRIDGE STUDIO</span>
+                            <h3>Voice workspace</h3>
+                        </div>
+                        <span class="live-indicator">● READY</span>
+                    </div>
+
+                    <div class="waveform" aria-label="Decorative sound wave">
+                        <span style="--h:25%"></span>
+                        <span style="--h:40%"></span>
+                        <span style="--h:65%"></span>
+                        <span style="--h:35%"></span>
+                        <span style="--h:80%"></span>
+                        <span style="--h:55%"></span>
+                        <span style="--h:100%"></span>
+                        <span style="--h:45%"></span>
+                        <span style="--h:70%"></span>
+                        <span style="--h:30%"></span>
+                        <span style="--h:90%"></span>
+                        <span style="--h:50%"></span>
+                        <span style="--h:65%"></span>
+                        <span style="--h:35%"></span>
+                        <span style="--h:80%"></span>
+                        <span style="--h:45%"></span>
+                        <span style="--h:60%"></span>
+                        <span style="--h:25%"></span>
+                        <span style="--h:75%"></span>
+                        <span style="--h:40%"></span>
+                    </div>
+
+                    <div class="visual-divider"></div>
+
+                    <div class="conversion-preview">
+                        <span class="preview-icon">✦</span>
+                        <div>
+                            <span class="small-label">YOUR WORDS, TRANSFORMED</span>
+                            <p>Speak naturally. Let your ideas flow.</p>
+                        </div>
+                    </div>
+
+                    <div class="visual-bottom">
+                        <span>🎤 Voice input</span>
+                        <span>🔊 Audio output</span>
+                    </div>
+                </div>
+
+                <div class="floating-tag tag-top">✦ Speech recognition</div>
+                <div class="floating-tag tag-bottom">♫ Text-to-speech</div>
+            </div>
+        </section>
+
+        <!-- Converter Section -->
+        <section class="converter-section" id="converter">
+            <div class="section-heading">
+                <span class="eyebrow">THE CONVERTER</span>
+                <h2>Words meet voice.</h2>
+                <p>Choose a tool, select your language, and start converting.</p>
+            </div>
+
+            <div class="language-bar">
+                <label for="language">🌐 Select language</label>
+
+                <select id="language" name="language">
+                    <option value="en-US">English (US)</option>
+                    <option value="en-GB">English (UK)</option>
+                    <option value="en-IN">English (India)</option>
+                    <option value="ta-IN">Tamil</option>
+                    <option value="hi-IN">Hindi</option>
+                    <option value="te-IN">Telugu</option>
+                    <option value="ml-IN">Malayalam</option>
+                    <option value="kn-IN">Kannada</option>
+                    <option value="fr-FR">French</option>
+                    <option value="es-ES">Spanish</option>
+                    <option value="de-DE">German</option>
+                    <option value="ja-JP">Japanese</option>
+                </select>
+            </div>
+
+            <div class="converter-grid">
+
+                <!-- Voice to Text -->
+                <article class="tool-card" id="voice-to-text">
+                    <div class="tool-card-top">
+                        <div class="tool-icon microphone-icon">🎙</div>
+                        <span class="tool-number">01 / INPUT</span>
+                    </div>
+
+                    <h3>Voice to Text</h3>
+                    <p class="tool-description">
+                        Speak into your microphone and turn your speech into
+                        editable text in seconds.
+                    </p>
+
+                    <div class="microphone-area">
+                        <button
+                            type="button"
+                            id="startBtn"
+                            class="microphone-button"
+                            aria-label="Start voice recognition">
+                            🎙
+                        </button>
+
+                        <p id="recordingStatus" aria-live="polite">
+                            Click the microphone to start
+                        </p>
+                    </div>
+
+                    <label for="speechResult" class="field-label">
+                        Your transcript
+                    </label>
+
+                    <textarea
+                        id="speechResult"
+                        rows="6"
+                        placeholder="Your recognized speech will appear here..."></textarea>
+
+                    <div class="text-info">
+                        <span id="speechWordCount">0 words</span>
+                        <span id="speechCharCount">0 characters</span>
+                    </div>
+
+                    <div class="tool-actions">
+                        <button type="button" id="stopBtn" class="primary-button">
+                            ■ Stop listening
+                        </button>
+
+                        <button type="button" id="copySpeechBtn" class="secondary-button">
+                            Copy text
+                        </button>
+
+                        <button type="button" id="clearSpeechBtn" class="clear-button">
+                            Clear
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Text to Voice -->
+                <article class="tool-card" id="text-to-voice">
+                    <div class="tool-card-top">
+                        <div class="tool-icon speaker-icon">🔊</div>
+                        <span class="tool-number">02 / OUTPUT</span>
+                    </div>
+
+                    <h3>Text to Voice</h3>
+                    <p class="tool-description">
+                        Enter your text and listen as your device reads it
+                        aloud in your selected language.
+                    </p>
+
+                    <label for="textInput" class="field-label">
+                        Enter your text
+                    </label>
+
+                    <textarea
+                        id="textInput"
+                        rows="6"
+                        placeholder="Type something you want to hear..."></textarea>
+
+                    <div class="text-info">
+                        <span id="inputWordCount">0 words</span>
+                        <span id="inputCharCount">0 characters</span>
+                    </div>
+
+                    <div class="voice-settings">
+                        <div class="setting">
+                            <label for="voiceSelect">Voice</label>
+                            <select id="voiceSelect">
+                                <option value="">Default device voice</option>
+                            </select>
+                        </div>
+
+                        <div class="setting">
+                            <label for="speed">Speed: <span id="speedValue">1x</span></label>
+                            <input
+                                type="range"
+                                id="speed"
+                                min="0.5"
+                                max="2"
+                                step="0.1"
+                                value="1">
+                        </div>
+                    </div>
+
+                    <div class="tool-actions">
+                        <button type="button" id="speakBtn" class="primary-button">
+                            ▶ Play voice
+                        </button>
+
+                        <button type="button" id="pauseBtn" class="secondary-button">
+                            Ⅱ Pause
+                        </button>
+
+                        <button type="button" id="resumeBtn" class="secondary-button">
+                            ▶ Resume
+                        </button>
+
+                        <button type="button" id="stopSpeakBtn" class="clear-button">
+                            ■ Stop
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <p class="privacy-note">
+                🔒 Your text is processed in your browser wherever supported.
+                Microphone access requires your permission.
+            </p>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-section">
+            <div class="section-heading">
+                <span class="eyebrow">SIMPLE BY DESIGN</span>
+                <h2>Three steps. That's it.</h2>
+                <p>Turn speech into text or text into speech without a complicated setup.</p>
+            </div>
+
+            <div class="steps-grid">
+                <article class="step-card">
+                    <span class="step-number">01</span>
+                    <div class="step-icon">🌐</div>
+                    <h3>Choose a language</h3>
+                    <p>Select the language you want to speak or hear.</p>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">02</span>
+                    <div class="step-icon">🎙</div>
+                    <h3>Speak or type</h3>
+                    <p>Use your microphone or enter text in the editor.</p>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">03</span>
+                    <div class="step-icon">✨</div>
+                    <h3>Convert and use</h3>
+                    <p>Copy your transcript or listen to your text aloud.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Information Banner -->
+        <section class="info-banner">
+            <div>
+                <span class="eyebrow">MADE FOR EVERYDAY USE</span>
+                <h2>Let your words travel further.</h2>
+                <p>
+                    Useful for language practice, notes, accessibility,
+                    learning, and everyday communication.
+                </p>
+            </div>
+
+            <a href="#converter" class="primary-button">Try VoiceBridge ↗</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#home" class="logo">
+            <span class="logo-icon">V</span>
+            <span>VoiceBridge<span class="logo-ai"> AI</span></span>
+        </a>
+
+        <p>Making speech and text work together.</p>
+
+        <span class="copyright">
+            © <span id="currentYear">2026</span> VoiceBridge AI. Built for learning.
+        </span>
+    </footer>
+
+    <!-- Status messages for JavaScript -->
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
